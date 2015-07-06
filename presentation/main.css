@@ -1,0 +1,155 @@
+/**
+ * Page styles:
+ */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #222;
+  font-family: Noto Sans;
+  font-size: 24px;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+
+/**
+ * Utility styles:
+ */
+
+.accent {
+  color: #f6871f;
+}
+
+.blue {
+  background-color: #0074d9;
+  color: #fff;
+}
+
+.green {
+  background-color: #3d9970;
+  color: #fff;
+}
+
+.navy {
+  background-color: #001f3f;
+  color: #fff;
+}
+
+.orange {
+  background-color: #f6871f;
+  color: #fff;
+}
+
+.red {
+  background-color: #ff4136;
+  color: #fff;
+}
+
+.card {
+  background-color: #222;
+  border-radius: 2%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  height: 560px;
+  width: 720px;
+}
+
+.card dd {
+  border-collapse: collapse;
+  border-color: #333;
+  border-style: solid none none;
+  border-width: 1px;
+  margin: 0;
+  padding: 0.25em 1rem;
+  transition: background-color 0.25s;
+}
+
+.card dd:hover {
+  background-color: #333;
+}
+
+.card dl {
+  margin: 0 0 1em 0;
+  width: 100%;
+}
+
+.card dt {
+  font-size: 75%;
+  font-weight: bold;
+  margin-top: 0.75em;
+  padding: 0.25em 1rem;
+  text-transform: uppercase;
+}
+
+.card h1 {
+  text-align: center;
+}
+
+.inset {
+  border: 5px solid #fff;
+  border-radius: 50%;
+  display: block;
+  height: 160px;
+  left: 50%;
+  margin-left: -80px;
+  position: absolute;
+  top: 0;
+  width: 160px;
+}
+
+.inset-caption {
+  font-size: 32px;
+  margin-top: 96px;
+  text-align: center;
+}
+
+
+/**
+ * Base slide styles:
+ */
+
+.step {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.step.circle {
+  border-radius: 50%;
+  color: #fff;
+  height: 500px;
+  width: 500px;
+}
+
+.step.full {
+  height: 720px;
+  width: 960px;
+}
+
+
+/**
+ * Individual slides:
+ */
+
+#welcome .title {
+  font-size: 72px;
+}
+
+#why .title {
+  font-size: 120px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "making-better-websites",
+  "version": "2015",
+  "authors": [
+    "Dan Stelljes <dan@stellj.es>"
+  ],
+  "description": "Slide deck for Making Better Websites at WELSTech 2015",
+  "license": "MIT",
+  "homepage": "http://dstelljes.github.io/welstech2015/",
+  "dependencies": {
+    "impress.js": "~0.5.3",
+    "normalize.css": "~3.0.3"
+  }
+}
