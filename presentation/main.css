@@ -10,6 +10,11 @@ html {
   box-sizing: inherit;
 }
 
+a {
+  color: #0074d9;
+  text-decoration: none;
+}
+
 body {
   color: #222;
   font-family: Noto Sans;
@@ -52,6 +57,23 @@ h1 {
 .red {
   background-color: #ff4136;
   color: #fff;
+}
+
+.bad, .better {
+  width: 46%;
+}
+
+.bad h2, .better h2 {
+  border-bottom: 1px solid #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 2em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.bad .copy, .better .copy {
+  font-size: 32px;
 }
 
 .card {
@@ -98,6 +120,32 @@ h1 {
   text-align: center;
 }
 
+.copy {
+  font-family: Merriweather, serif;
+  line-height: 1.4;
+}
+
+.example {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  color: #fff;
+  display: block;
+  margin-top: 5em;
+  padding: 1em 2em;
+  text-align: center;
+}
+
+.example:before {
+  background-image: url('images/lightbulb.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: '';
+  display: block;
+  height: 48px;
+  margin: 0 auto 0.5em;
+  width: 48px;
+}
+
 .inset {
   border: 5px solid #fff;
   border-radius: 50%;
@@ -114,6 +162,10 @@ h1 {
   font-size: 32px;
   margin-top: 96px;
   text-align: center;
+}
+
+.inverted {
+  color: #fff;
 }
 
 
@@ -135,6 +187,13 @@ h1 {
   width: 500px;
 }
 
+.step.comparison {
+  align-items: flex-start;
+  height: 520px;
+  justify-content: space-between;
+  width: 960px;
+}
+
 .step.full {
   height: 720px;
   width: 960px;
@@ -145,11 +204,47 @@ h1 {
  * Individual slides:
  */
 
-#welcome .title {
-  font-size: 72px;
+#content, #design, #presentation {
+  display: block;
+  text-align: center;
 }
 
-#why .title {
+#content .label, #design .label, #presentation .label {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#content {
+  background-color: #001f3f;
+}
+
+#content .label {
+  font-size: 300%;
+  margin-top: 200px;
+}
+
+#design {
+  background-color: #0071e5;
+}
+
+#design .label {
+  margin-top: 28px;
+}
+
+#how .title, #why .title {
   font-size: 120px;
   text-transform: uppercase;
+}
+
+#presentation {
+  background-color: #003f7f;
+}
+
+#presentation .label {
+  font-size: 150%;
+  margin-top: 60px;
+}
+
+#welcome .title {
+  font-size: 72px;
 }

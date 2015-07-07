@@ -15,6 +15,13 @@ body {
 
 h1 {
   font-size: 1.4em;
+  margin-bottom: 0.25em;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: normal;
+  margin-top: 0;
 }
 
 .links {
