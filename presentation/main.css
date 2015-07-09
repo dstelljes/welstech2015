@@ -25,6 +25,40 @@ h1 {
   font-size: 48px;
 }
 
+h1 a {
+  color: inherit;
+}
+
+
+/**
+ * Base slide styles:
+ */
+
+.step {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+
+.step.circle {
+  border-radius: 50%;
+  color: #fff;
+  height: 500px;
+  width: 500px;
+}
+
+.step.split {
+  height: 520px;
+  width: 960px;
+}
+
+.step.full {
+  height: 720px;
+  width: 960px;
+}
+
 
 /**
  * Utility styles:
@@ -32,35 +66,6 @@ h1 {
 
 .accent {
   color: #f6871f;
-}
-
-.blue {
-  background-color: #0074d9;
-  color: #fff;
-}
-
-.green {
-  background-color: #3d9970;
-  color: #fff;
-}
-
-.navy {
-  background-color: #001f3f;
-  color: #fff;
-}
-
-.orange {
-  background-color: #f6871f;
-  color: #fff;
-}
-
-.red {
-  background-color: #ff4136;
-  color: #fff;
-}
-
-.bad, .better {
-  width: 46%;
 }
 
 .bad h2, .better h2 {
@@ -99,10 +104,6 @@ h1 {
   transition: background-color 0.25s;
 }
 
-.card dd:hover {
-  background-color: #333;
-}
-
 .card dl {
   margin: 0 0 1em 0;
   width: 100%;
@@ -131,11 +132,18 @@ h1 {
 }
 
 .example {
-  background: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   color: #fff;
   display: block;
   padding: 1em 2em;
+  text-align: center;
+}
+
+.example.outset {
+  left: 50%;
+  margin-left: -250px;
+  width: 500px;
 }
 
 .example:before {
@@ -153,14 +161,21 @@ h1 {
   text-align: center;
 }
 
-.inset {
+.half {
+  width: 46%;
+}
+
+.inset, .outset {
   border: 5px solid #fff;
-  border-radius: 50%;
   display: block;
+  position: absolute;
+}
+
+.inset {
+  border-radius: 50%;
   height: 160px;
   left: 50%;
   margin-left: -80px;
-  position: absolute;
   top: 0;
   width: 160px;
 }
@@ -173,6 +188,10 @@ h1 {
 
 .inverted {
   color: #fff;
+}
+
+.outset {
+  bottom: 0;
 }
 
 .pie-legend {
@@ -196,37 +215,41 @@ h1 {
   width: 32px;
 }
 
+.split {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 
 /**
- * Base slide styles:
+ * Background colors:
  */
 
-.step {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  position: relative;
-}
-
-.step.circle {
-  border-radius: 50%;
+.blue {
+  background-color: #0074d9;
   color: #fff;
-  height: 500px;
-  width: 500px;
 }
 
-.step.comparison {
-  align-items: flex-start;
-  flex-direction: row;
-  height: 520px;
-  justify-content: space-between;
-  width: 960px;
+.green {
+  background-color: #3d9970;
+  color: #fff;
 }
 
-.step.full {
-  height: 720px;
-  width: 960px;
+.navy {
+  background-color: #001f3f;
+  color: #fff;
+}
+
+.orange {
+  background-color: #f6871f;
+  color: #fff;
+}
+
+.red {
+  background-color: #ff4136;
+  color: #fff;
 }
 
 
@@ -264,6 +287,10 @@ h1 {
 #how .title, #why .title {
   font-size: 120px;
   text-transform: uppercase;
+}
+
+#keep-in-touch {
+  text-align: center;
 }
 
 #structure {
