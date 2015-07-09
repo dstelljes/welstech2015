@@ -9,6 +9,7 @@
   "homepage": "http://dstelljes.github.io/welstech2015/",
   "dependencies": {
     "impress.js": "~0.5.3",
-    "normalize.css": "~3.0.3"
+    "normalize.css": "~3.0.3",
+    "Chart.js": "~1.0.2"
   }
 }

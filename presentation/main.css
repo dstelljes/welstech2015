@@ -120,6 +120,11 @@ h1 {
   text-align: center;
 }
 
+.chart {
+  display: flex;
+  flex-direction: row;
+}
+
 .copy {
   font-family: Merriweather, serif;
   line-height: 1.4;
@@ -130,9 +135,7 @@ h1 {
   border-radius: 10px;
   color: #fff;
   display: block;
-  margin-top: 5em;
   padding: 1em 2em;
-  text-align: center;
 }
 
 .example:before {
@@ -144,6 +147,10 @@ h1 {
   height: 48px;
   margin: 0 auto 0.5em;
   width: 48px;
+}
+
+.group {
+  text-align: center;
 }
 
 .inset {
@@ -168,6 +175,27 @@ h1 {
   color: #fff;
 }
 
+.pie-legend {
+  list-style: none;
+}
+
+.pie-legend li {
+  display: block;
+  padding-left: 48px;
+  position: relative;
+  margin-bottom: 0.25em;
+}
+
+.pie-legend span {
+  border-radius: 3px;
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 32px;
+}
+
 
 /**
  * Base slide styles:
@@ -176,7 +204,8 @@ h1 {
 .step {
   align-items: center;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   position: relative;
 }
 
@@ -189,6 +218,7 @@ h1 {
 
 .step.comparison {
   align-items: flex-start;
+  flex-direction: row;
   height: 520px;
   justify-content: space-between;
   width: 960px;
@@ -204,12 +234,12 @@ h1 {
  * Individual slides:
  */
 
-#content, #design, #presentation {
+#content, #design, #structure {
   display: block;
   text-align: center;
 }
 
-#content .label, #design .label, #presentation .label {
+#content .label, #design .label, #structure .label {
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -236,11 +266,11 @@ h1 {
   text-transform: uppercase;
 }
 
-#presentation {
+#structure {
   background-color: #003f7f;
 }
 
-#presentation .label {
+#structure .label {
   font-size: 150%;
   margin-top: 60px;
 }
